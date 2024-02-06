@@ -1,0 +1,27 @@
+﻿<Window x:Class="BinaryCodeToImageConverter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BinaryCodeToImageConverter"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="SourceFileButton" HorizontalAlignment="Left" Margin="10,78,0,0" VerticalAlignment="Top" Height="35" Width="142" FontSize="24" Click="SourceFileButton_Click" Content="Source path"/>
+        <TextBlock HorizontalAlignment="Left" Margin="157,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Width="622"/>
+        <Button x:Name="GenerateFileButton" Content="Generate" HorizontalAlignment="Left" Margin="10,118,0,0" VerticalAlignment="Top" Height="35" Width="142" FontSize="24" Click="GenerateFileButton_Click"/>
+        <TextBox x:Name="ResolutionTextBox" HorizontalAlignment="Left" Margin="108,11,0,0" TextWrapping="Wrap" Text="16" VerticalAlignment="Top" Width="120" TextChanged="ResolutionTextBox_TextChanged"/>
+        <TextBlock TextWrapping="Wrap" Text="Resolution:" Margin="4,13,0,0" HorizontalAlignment="Left" Width="99" Height="16" VerticalAlignment="Top">
+            <UIElement.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </UIElement.RenderTransform>
+        </TextBlock>
+        <CheckBox x:Name="IsTransparentCheckBox" Content="Transparent" HorizontalAlignment="Left" Margin="246,12,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
