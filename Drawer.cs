@@ -6,7 +6,7 @@ namespace BinaryCodeToImageConverter
 {
     public class Drawer
     {
-        Bitmap Image;
+        private Bitmap Image;
         public Drawer(Bitmap image)
         {
             Image = image;
